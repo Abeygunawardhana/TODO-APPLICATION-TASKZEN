@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    tools:context=".user_infor_setting">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="79dp"
+                android:src="@drawable/setting_rectangular" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Tasks"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                app:srcCompat="@drawable/setting" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="25dp">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:paddingTop="100dp"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Ama Liyanage"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/PROFILE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="PROFILE"
+            android:textColor="@color/black"
+            android:textSize="12dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/Task_Name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="45dp"
+                android:background="@drawable/rounded_background2"
+                android:hint="Username"
+                android:drawableStart="@drawable/username"
+                android:drawablePadding="12dp"
+                android:drawableEnd="@drawable/go"
+                android:paddingLeft="18dp"
+                android:textColor="#868484"
+                android:textColorHint="#868484"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/ama_liyanage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/Task_Name1"
+                android:layout_alignRight="@id/Task_Name1"
+                android:paddingTop="10dp"
+                android:layout_marginRight="56dp"
+                android:text="ama liyanage"
+                android:textColor="#868484"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/Task_Name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="45dp"
+                android:background="@drawable/rounded_background2"
+                android:drawableStart="@drawable/email"
+                android:drawablePadding="12dp"
+                android:hint="Email"
+                android:drawableEnd="@drawable/go"
+                android:paddingLeft="18dp"
+                android:textColor="#868484"
+                android:textColorHint="#868484"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/ama_gmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/Task_Name2"
+                android:layout_alignRight="@id/Task_Name2"
+                android:paddingTop="15dp"
+                android:layout_marginRight="56dp"
+                android:text="am@gmail.com"
+                android:textColor="#868484"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/Task_Name3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="45dp"
+                android:background="@drawable/rounded_background2"
+                android:drawableStart="@drawable/password"
+                android:drawablePadding="12dp"
+                android:hint="Password"
+                android:drawableEnd="@drawable/go"
+                android:paddingLeft="18dp"
+                android:textColor="#868484"
+                android:textColorHint="#868484"
+                android:textSize="13dp" />
+
+
+
+            <TextView
+                android:id="@+id/pw_pattern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/Task_Name3"
+                android:layout_alignRight="@id/Task_Name3"
+                android:paddingTop="15dp"
+                android:layout_marginRight="56dp"
+                android:text="**********"
+                android:textColor="#868484"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/Task_Name4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="45dp"
+                android:background="@drawable/rounded_background2"
+                android:drawableStart="@drawable/dark_mode"
+                android:drawablePadding="12dp"
+                android:hint="Dark Mode"
+                android:drawableEnd="@drawable/switch_button"
+                android:paddingLeft="18dp"
+                android:textColor="#868484"
+                android:textColorHint="#868484"
+                android:textSize="13dp" />
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ACCOUNT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="ACCOUNT"
+            android:textColor="@color/black"
+            android:textSize="12dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/Task_Name5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="45dp"
+                android:background="@drawable/rounded_background2"
+                android:drawableStart="@drawable/language"
+                android:drawablePadding="12dp"
+                android:hint="Language"
+                android:paddingLeft="18dp"
+                android:drawableEnd="@drawable/go"
+                android:textColor="#868484"
+                android:textColorHint="#868484"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/English_UK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/Task_Name5"
+                android:layout_alignRight="@id/Task_Name5"
+                android:text="English (UK)"
+                android:paddingTop="15dp"
+                android:layout_marginRight="56dp"
+                android:textColor="#868484"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/Task_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="45dp"
+                android:background="@drawable/rounded_background2"
+                android:drawableStart="@drawable/calender"
+                android:drawablePadding="12dp"
+                android:hint="Birthday"
+                android:drawableEnd="@drawable/go"
+                android:paddingLeft="18dp"
+                android:textColor="#868484"
+                android:textColorHint="#868484"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/Task_Name"
+                android:layout_alignRight="@id/Task_Name"
+                android:text="Jun, 30,2001"
+                android:paddingTop="15dp"
+                android:layout_marginRight="56dp"
+                android:textColor="#868484"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+
+
+
+        <Button
+            android:id="@+id/Add_Task"
+            android:layout_width="318dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="left"
+            android:text="Log out"
+            android:textSize="14dp"
+            android:drawableEnd="@drawable/logout"
+            android:background="@drawable/add_task_button"/>
+
+
+        <Button
+            android:id="@+id/Delete_Account"
+            android:layout_width="318dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="Delete Account"
+            android:textSize="14dp"
+            android:drawableEnd="@drawable/delete"
+            android:background="@drawable/add_task_button"/>
+
+        <ImageView
+            android:id="@+id/bottombar"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/bottombar" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

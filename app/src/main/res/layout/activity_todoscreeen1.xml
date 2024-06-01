@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".todoscreeen1">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="79dp"
+                android:src="@drawable/setting_rectangular" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Tasks"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/back"  />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="25dp">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="267dp"
+            android:paddingTop="100dp"
+            android:src="@drawable/im"  />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Tasks"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/Task_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_background"
+            android:drawableStart="@drawable/task_name1"
+            android:drawablePadding="12dp"
+            android:hint="Task Name"
+            android:paddingLeft="18dp"
+            android:textColor="#868484"
+            android:textColorHint="#868484"
+            android:textSize="13sp" />
+
+
+
+        <EditText
+            android:id="@+id/Select_your_Category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_background"
+            android:drawableStart="@drawable/task_category1"
+            android:drawableEnd="@drawable/down_circle20"
+            android:drawablePadding="12dp"
+            android:hint="Select your Category"
+            android:paddingLeft="18dp"
+            android:textColor="#868484"
+            android:textColorHint="#868484"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Date"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/Set_due_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:drawableEnd="@drawable/down_circle20"
+            android:background="@drawable/rounded_background"
+            android:drawablePadding="12dp"
+            android:drawableStart="@drawable/calender"
+            android:hint="Set due Date"
+            android:paddingLeft="18dp"
+            android:textColor="#868484"
+            android:textColorHint="#868484"
+            android:textSize="13dp" />
+
+        <EditText
+            android:id="@+id/Set_Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_background"
+            android:drawableEnd="@drawable/down_circle20"
+            android:drawablePadding="12dp"
+            android:drawableStart="@drawable/time"
+            android:hint="Set Time"
+            android:paddingLeft="18dp"
+            android:textColor="#868484"
+            android:textColorHint="#868484"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/Reminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Reminder"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/Select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/rounded_background"
+            android:drawableEnd="@drawable/switch_button"
+            android:drawablePadding="12dp"
+            android:drawableStart="@drawable/reminder1"
+            android:hint="Set Reminder"
+            android:paddingLeft="18dp"
+            android:textColor="#868484"
+            android:textColorHint="#868484"
+            android:textSize="13dp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="146dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="Add Task"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp"
+            android:drawableEnd="@drawable/rigth_in_circle"
+            android:background="@drawable/add_task_button" />
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

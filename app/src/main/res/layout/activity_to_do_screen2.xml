@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".to_do_screen2">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="79dp"
+                android:src="@drawable/setting_rectangular" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Good Morning"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Ama Liyanage"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                app:srcCompat="@drawable/setting" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/cardView2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/calender_april"  />
+
+        <TextView
+            android:id="@+id/ACCOUNT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Upcoming Tasks"
+
+
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:src="@drawable/rec1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Personal"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:drawableStart="@drawable/circle"
+                android:drawablePadding="12dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Lunch"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="30dp"
+                android:drawableStart="@drawable/clock1"
+                android:drawablePadding="12dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="1.00 pm"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="138dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="30dp"
+                android:drawableStart="@drawable/bell"
+                android:drawablePadding="12dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Reminder me"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="30dp"
+                android:drawableStart="@drawable/calender_bl"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Reminder me"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="30dp"
+                android:drawableStart="@drawable/circle"
+                android:drawablePadding="12dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Group project"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="30dp"
+                android:drawableStart="@drawable/clock1"
+                android:drawablePadding="12dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="1.00 pm"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="138dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="30dp"
+                android:drawableStart="@drawable/bell"
+                android:drawablePadding="12dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Reminder me"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="30dp"
+                android:drawableStart="@drawable/calender_bl"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Reminder me"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:src="@drawable/rec1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Shopping"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:drawableStart="@drawable/circle"
+                android:drawablePadding="12dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Grocery Items"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="30dp"
+                android:drawableStart="@drawable/clock1"
+                android:drawablePadding="12dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="1.00 pm"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="138dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="30dp"
+                android:drawableStart="@drawable/bell"
+                android:drawablePadding="12dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Reminder me"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="30dp"
+                android:drawableStart="@drawable/calender_bl"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Reminder me"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="30dp"
+                android:drawableStart="@drawable/circle"
+                android:drawablePadding="12dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="pharmacy items"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="30dp"
+                android:drawableStart="@drawable/clock1"
+                android:drawablePadding="12dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="1.00 pm"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="138dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="30dp"
+                android:drawableStart="@drawable/bell"
+                android:drawablePadding="12dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Reminder me"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="270dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="30dp"
+                android:drawableStart="@drawable/calender_bl"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Reminder me"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+            <ImageView
+                android:id="@+id/bottombar"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="210dp"
+                android:src="@drawable/bottombar"  />
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
