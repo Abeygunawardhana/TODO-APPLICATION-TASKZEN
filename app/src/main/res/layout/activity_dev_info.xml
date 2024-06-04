@@ -41,7 +41,7 @@
                 android:layout_height="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="30dp"
-                app:srcCompat="@drawable/setting" />
+                app:srcCompat="@drawable/back" />
 
         </RelativeLayout>
 
@@ -73,7 +73,7 @@
             android:textColor="@color/black"
             android:textSize="14dp" />
 
-        <EditText
+        <TextView
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -101,7 +101,7 @@
 
             />
 
-        <EditText
+        <TextView
             android:id="@+id/st_id1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -115,7 +115,7 @@
             android:textSize="16dp" />
 
 
-        <EditText
+        <TextView
             android:id="@+id/st_id2"
             android:layout_width="317dp"
             android:layout_height="117dp"

@@ -1,8 +1,10 @@
 package com.example.todo_new;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.ItemTouchHelper;
@@ -25,11 +27,12 @@ public class add_task extends AppCompatActivity implements OnDialogCloseListner 
     private DataBaseHelper myDB;
     private List<ToDoModel> mList;
     private ToDoAdapter adapter;
+    private ImageView taskzenSmall;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_task);  // Assuming your layout is activity_main.xml
+        setContentView(R.layout.activity_add_task);  // Assuming your layout is activity_add_task.xml
 
         mRecyclerview = findViewById(R.id.recyclerview);
         fab = findViewById(R.id.fab);
@@ -54,6 +57,15 @@ public class add_task extends AppCompatActivity implements OnDialogCloseListner 
 
         ItemTouchHelper itemTouchHelper = new ItemTouchHelper(new RecyclerViewTouchHelper(adapter));
         itemTouchHelper.attachToRecyclerView(mRecyclerview);
+
+        taskzenSmall = findViewById(R.id.taskzen_small);
+        taskzenSmall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(add_task.this, dev_info.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

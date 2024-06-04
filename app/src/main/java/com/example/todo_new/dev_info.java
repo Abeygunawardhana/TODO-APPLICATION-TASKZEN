@@ -1,8 +1,10 @@
 package com.example.todo_new;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class dev_info extends AppCompatActivity {
 
@@ -10,5 +12,13 @@ public class dev_info extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dev_info);
+
+        ImageView back = findViewById(R.id.imageView1); // Use the correct id if different
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish(); // Finish the current activity and return to the previous one
+            }
+        });
     }
 }

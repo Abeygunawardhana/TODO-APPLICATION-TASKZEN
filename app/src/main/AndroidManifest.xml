@@ -25,6 +25,8 @@
         <activity android:name=".sign_up" />
         <activity android:name=".add_task" />
         <activity android:name=".sign_in" />
+        <activity android:name=".dev_info" />
+
 
     </application>
 
