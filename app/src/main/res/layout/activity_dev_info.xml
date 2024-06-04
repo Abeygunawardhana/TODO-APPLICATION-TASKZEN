@@ -124,7 +124,7 @@
             android:background="@drawable/rounded_background_devinfor_last_squre"
             android:fontFamily="@font/poppins_bold"
             android:paddingLeft="16dp"
-            android:text="Task Zen\nTask Zen is a task management app that helps you to track your daily tasks and the time spent on each task."
+            android:text="Task Zen :\nTask Zen is a task management app that helps you to track your daily tasks."
             android:textColor="#868484"
             android:textColorHint="#868484"
             android:textSize="15dp" />
