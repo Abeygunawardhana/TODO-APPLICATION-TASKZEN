@@ -57,9 +57,9 @@
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="451dp"
-            android:layout_height="312dp"
+            android:layout_height="270dp"
             android:layout_gravity="center"
-            android:paddingTop="100dp"
+            android:paddingTop="90dp"
             android:src="@drawable/tasksen" />
 
         <TextView
@@ -132,6 +132,29 @@
 
 
 
+        <Button
+            android:id="@+id/userprofile"
+            android:layout_width="318dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="left"
+            android:text="User Profile"
+            android:textSize="14dp"
+            android:drawableEnd="@drawable/username"
+            android:background="@drawable/add_task_button"/>
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="318dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="Log out"
+            android:textSize="14dp"
+            android:drawableEnd="@drawable/logout"
+            android:background="@drawable/add_task_button"/>
 
 
     </LinearLayout>
