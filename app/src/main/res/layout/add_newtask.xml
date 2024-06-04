@@ -8,7 +8,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/edittext"
         android:paddingStart="7dp"
-        android:hint="Enter New Task"
+        android:hint="Enter A New Task"
+        android:fontFamily="@font/poppins"
         android:paddingEnd="7dp"/>
 
     <Button
